@@ -18,12 +18,12 @@ hide:
 - [:material-view-module: **Module & Pakete**](content/packages/moduls.md)
 - [:octicons-file-16: **Dateizugriffe**](content/io/io.md)
 - [:material-list-status: **Unit Tests**](content/unit_tests/unit_tests.md)
-- [:fontawesome-solid-object-ungroup: **OOP**](content/classes/classes.md)
+<!-- - [:fontawesome-solid-object-ungroup: **OOP**](content/classes/classes.md)
 - [:material-panda: **Pandas**](content/pandas/umgang.md)
 - [:material-chart-scatter-plot: **Lineare Regressionen**](content/regression/umgang.md)
 - [:simple-virtualbox: **Virtuelle Umgebung**](content/project/tic_tac_toe.md)
 - [:material-nintendo-game-boy: **Projekt**](content/project/tic_tac_toe.md)
-- [:simple-rocketdotchat: **Umgang mit KI**](content/ki/umgang.md)
+- [:simple-rocketdotchat: **Umgang mit KI**](content/ki/umgang.md) -->
 
 </div>
 
