@@ -1,7 +1,6 @@
 .idea
 .venv
-.DS_Store
-.firebase
-site
 venv
+.DS_Store
+site
 __pycache__
