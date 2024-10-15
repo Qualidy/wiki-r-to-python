@@ -40,19 +40,17 @@ Das folgende Video von [NeuralNine](https://www.youtube.com/watch?v=GxCXiSkm6no)
 fasst die Inhalte dieses Kapitels zusammen und vertieft sie.
 Schau dir das Video an und stell mit deinem Tutor sicher, dass du alle Inhalte verstehst.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GxCXiSkm6no?si=s0zw6JnWV3lWkjSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{ youtube_video("https://www.youtube.com/embed/GxCXiSkm6no?si=s0zw6JnWV3lWkjSw") }}
 
 Auch [2MinutesPy](https://www.youtube.com/watch?v=mWaMSGwiSB0) hat ein schönes Video zu `__init__.py`:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mWaMSGwiSB0?si=i-Qa1KO96IDlFLD_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+{{ youtube_video("https://www.youtube.com/embed/mWaMSGwiSB0?si=i-Qa1KO96IDlFLD_") }}
 
 ## Was ist Name == Main?
-<details>
-<summary>
-🎦 Video
-</summary>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/57b8gJKZf6o?si=sBKUorE0e-MlfRoK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</details>
+
+{{ youtube_video("https://www.youtube.com/embed/57b8gJKZf6o?si=sBKUorE0e-MlfRoK") }}
+
 
 Wenn wir die folgende Datei `greetings.py` ausführen
 

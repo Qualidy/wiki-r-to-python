@@ -5,12 +5,8 @@ und die Codeverwaltung zu optimieren.
 
 ## Module
 
-<details>
-<summary>
-🎦 Video
-</summary>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NNJgJ7-EW10?si=vgr49JBc_nwKAQDh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</details>
+{{ youtube_video("https://www.youtube.com/embed/NNJgJ7-EW10?si=vgr49JBc_nwKAQDh") }}
+
 
 Ein Modul in Python ist im Grunde genommen eine `.py`-Datei mit Python-Code.
 In dieser Datei können Funktionen, Variablen und Klassen definiert werden,
