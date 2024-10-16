@@ -46,3 +46,5 @@ print(f'{x}² = {q}')""") }}
 {{ task(file="tasks/funktionen_schreiben_rückgabe.yaml") }}
 
 {{ task(file="tasks/funktionen_lesen_komplex.yaml") }}
+
+{{ task(file="tasks/einkaufsladen.yaml") }}
