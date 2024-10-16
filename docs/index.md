@@ -16,13 +16,13 @@ hide:
 - [:fontawesome-solid-table-list: **Collections**](content/collections/lists.md)
 - [:material-function-variant: **Funktionen**](content/functions/functions.md)
 - [:material-view-module: **Module & Pakete**](content/packages/moduls.md)
-- [:octicons-file-16: **Dateizugriffe**](content/io/io.md)
+- [:simple-virtualbox: **Virtuelle Umgebung**](content/_venv/_venv.md)
+- [:material-panda: **Pandas**](content/pandas/pandas.md)
+- [:material-chart-bar: **Plotting & Dashboards**](content/visualization/visualization.md)
 - [:material-list-status: **Unit Tests**](content/unit_tests/unit_tests.md)
-<!-- - [:fontawesome-solid-object-ungroup: **OOP**](content/classes/classes.md)
-- [:material-panda: **Pandas**](content/pandas/umgang.md)
+- [:fontawesome-solid-object-ungroup: **OOP**](content/oop/oop.md)
 - [:material-chart-scatter-plot: **Lineare Regressionen**](content/regression/umgang.md)
-- [:simple-virtualbox: **Virtuelle Umgebung**](content/project/tic_tac_toe.md)
-- [:material-nintendo-game-boy: **Projekt**](content/project/tic_tac_toe.md)
+<!-- - [:material-nintendo-game-boy: **Projekt**](content/project/tic_tac_toe.md)
 - [:simple-rocketdotchat: **Umgang mit KI**](content/ki/umgang.md) -->
 
 </div>
