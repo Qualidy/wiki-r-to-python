@@ -1,0 +1,2314 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>34.5 Übung OOP - Python Einsteiger Schulung</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/logo.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/grid.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/video_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/python_tutor_admonition.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/mermaid.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-assignment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Python Einsteiger Schulung" class="md-header__button md-logo" aria-label="Python Einsteiger Schulung" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python Einsteiger Schulung
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              34.5 Übung OOP
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Python Einsteiger Schulung" class="md-nav__button md-logo" aria-label="Python Einsteiger Schulung" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Python Einsteiger Schulung
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Übersicht
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_vs_r/python_vs_r/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python vs. R
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Variablen
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Variablen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/variablen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Was sind Variablen?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/datentypen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Datentypen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/nutzereingaben/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nutzereingaben
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bedingter Code
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Bedingter Code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bedingter_code/bedingter_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    if-Blöcke
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bedingter_code/bedingung/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bedingungen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../bedingter_code/bedingungen_verkn%C3%BCpfen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bedingungen verknüpfen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../loops/loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Codewiederholung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Collections
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Collections
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collections/lists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Listen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collections/lists_append/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Listen erweitern
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collections/for_loop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Listen durchlaufen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../collections/weitere_datenstrukturen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Weiter Datenstrukturen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Funktionen
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Funktionen
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Funktionen definieren
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/functions_with_parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parameter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../functions/functions_with_returns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rückgabewerte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Module & Pakete
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Module & Pakete
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../packages/moduls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../packages/packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pakete
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_venv/_venv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtuelle Umgebung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pandas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Pandas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/pandas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einführung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/series_dataframes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Series & DataFrames
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/read_dataframes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lesen von DataFrames
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/export_dataframes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Export von DataFrames
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/filter_dataframes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filtern von DataFrames
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/statistic_dataframes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Statistik mit DataFrames
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/add_and_remove_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Daten entfernen & hinzufügen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/merge_dataframes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DataFrames zusammenfügen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/useful_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nützliche Funktionen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pandas/clean_dataframes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DataFrames bereinigen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plotting & Dashboards
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Plotting & Dashboards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/visualization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einführung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/matplotlib/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matplotlib
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/seaborn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Seaborn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/plotly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plotly
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../visualization/streamlit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Streamlit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    OOP
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            OOP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Einführung
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../methods_classes_objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Methoden, Klassen und Objekte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fortgeschrittene Themen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regression/umgang.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lineare Regressionen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit_tests/unit_tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>34.5 Übung OOP</h1>
+
+<h2 id="1-assignment">1. Assignment<a class="headerlink" href="#1-assignment" title="Permanent link">&para;</a></h2>
+<p>Build a quiz game with the OOP paradigma. The user is asked a question and he chooses between "true" or "false".  If the question is correct, we give him one point.  If the question was wrong, ask him the next question. You need a <code>main</code>, <code>question_model</code>, <code>quiz_brain</code> and a <code>data</code> file!</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>The `data.py` file:
+</code></pre></div></td></tr></table></div>
+<p><code>python
+question_data = [
+{"text": "A slug's blood is green.", "answer": "True"},
+{"text": "The loudest animal is the African Elephant.", "answer": "False"},
+{"text": "Approximately one quarter of human bones are in the feet.", "answer": "True"},
+{"text": "The total surface area of a human lungs is the size of a football pitch.", "answer": "True"},
+{"text": "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", "answer": "True"},
+{"text": "In London, UK, if you happen to die in the House of Parliament, you are entitled to a state funeral.", "answer": "False"},
+{"text": "It is illegal to pee in the Ocean in Portugal.", "answer": "True"},
+{"text": "You can lead a cow down stairs but not up stairs.", "answer": "False"},
+{"text": "Google was originally called 'Backrub'.", "answer": "True"},
+{"text": "Buzz Aldrin's mother's maiden name was 'Moon'.", "answer": "True"},
+{"text": "No piece of square dry paper can be folded in half more than 7 times.", "answer": "False"},
+{"text": "A few ounces of chocolate can to kill a small dog.", "answer": "True"}
+]</code></p>
+<p>The most logic should be inside the <code>quiz_brain</code> file.<br />
+The output should look like this:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span></pre></div></td><td class="code"><div><pre><span></span><code>C:\Users\olexa\PycharmProjects\pythonProject\venv\Scripts\python.exe C:/Users/olexa/PycharmProjects/pythonProject/main.py
+Q.1: A slug&#39;s blood is green. (True/False): true
+You got it right!
+The correct answer was: True.
+Your current score is: 1/1
+
+
+Q.2: The loudest animal is the African Elephant. (True/False): true
+That&#39;s wrong!
+The correct answer was: False.
+Your current score is: 1/2
+.
+.
+.
+.
+.
+Q.11: No piece of square dry paper can be folded in half more than 7 times. (True/False): false
+You got it right!
+The correct answer was: False.
+Your current score is: 1/11
+
+
+Q.12: A few ounces of chocolate can to kill a small dog. (True/False): false
+That&#39;s wrong!
+The correct answer was: True.
+Your current score is: 1/12
+
+
+You have completed the quiz
+Your final score was: 1/12
+
+Process finished with exit code 0
+</code></pre></div></td></tr></table></div></p>
+<p>Solution:</p>
+<p>The <code>main.py</code> file:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">question_model</span> <span class="kn">import</span> <span class="n">Question</span>
+<span class="kn">from</span> <span class="nn">data</span> <span class="kn">import</span> <span class="n">question_data</span>
+<span class="kn">from</span> <span class="nn">quiz_brain</span> <span class="kn">import</span> <span class="n">QuizBrain</span>
+
+<span class="c1"># 2. In this list we will save objects from the class &quot;Question&quot;</span>
+<span class="n">question_bank</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1"># 2. Write a &quot;for&quot; loop to iterate over the &quot;question_data&quot;.</span>
+<span class="k">for</span> <span class="n">question</span> <span class="ow">in</span> <span class="n">question_data</span><span class="p">:</span>
+    <span class="c1"># 3. Create a &quot;Question&quot; object from each entry in &quot;question_data&quot;</span>
+    <span class="n">question_text</span> <span class="o">=</span> <span class="n">question</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
+    <span class="n">question_answer</span> <span class="o">=</span> <span class="n">question</span><span class="p">[</span><span class="s2">&quot;answer&quot;</span><span class="p">]</span>
+    <span class="c1"># 3. Now we create the object</span>
+    <span class="n">new_question</span> <span class="o">=</span> <span class="n">Question</span><span class="p">(</span><span class="n">question_text</span><span class="p">,</span> <span class="n">question_answer</span><span class="p">)</span>
+    <span class="c1"># 4. Append each &quot;Question&quot; object to the &quot;question_bank&quot;</span>
+    <span class="n">question_bank</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_question</span><span class="p">)</span>
+
+<span class="n">quiz</span> <span class="o">=</span> <span class="n">QuizBrain</span><span class="p">(</span><span class="n">question_bank</span><span class="p">)</span>
+
+<span class="c1"># 11. Use a while loop to show the next question until the end</span>
+<span class="k">while</span> <span class="n">quiz</span><span class="o">.</span><span class="n">still_has_questions</span><span class="p">():</span>
+    <span class="n">quiz</span><span class="o">.</span><span class="n">next_question</span><span class="p">()</span>
+<span class="c1"># 16. Tell the user at the end that he completed the quiz and display the final score</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You have completed the quiz&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Your final score was: </span><span class="si">{</span><span class="n">quiz</span><span class="o">.</span><span class="n">score</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">quiz</span><span class="o">.</span><span class="n">question_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div></p>
+<p>The <code>question_model.py</code> file:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 1. Create a &quot;Question&quot; class with an constructor with two attributes &quot;text&quot; and &quot;answer&quot;</span>
+<span class="k">class</span> <span class="nc">Question</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q_text</span><span class="p">,</span> <span class="n">q_answer</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">q_text</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">answer</span> <span class="o">=</span> <span class="n">q_answer</span>
+</code></pre></div></td></tr></table></div></p>
+<p>The <code>quiz_brain.py</code> file:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 5. Use the &quot;quiz_brain&quot; file to asking the questions, checking of the answer was correct</span>
+<span class="c1">#    and checking if it&#39;s the end of the quiz</span>
+<span class="c1"># 6. Create a class &quot;QuizBrain&quot;</span>
+<span class="k">class</span> <span class="nc">QuizBrain</span><span class="p">:</span>
+    <span class="c1"># 6. Write a constructor which initialise the question_number to 0 and</span>
+    <span class="c1"># the question_list to an input</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q_list</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">question_number</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">question_list</span> <span class="o">=</span> <span class="n">q_list</span>
+        <span class="c1"># 14. Keep track of the user&#39;s score, add for this a new attribute &quot;score&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># 7. Create a method &quot;next_question&quot; inside the &quot;QuizBrain&quot; class.</span>
+    <span class="k">def</span> <span class="nf">next_question</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 7. The first question from the list begins at 0</span>
+        <span class="n">current_question</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">question_list</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">question_number</span><span class="p">]</span>
+        <span class="c1"># 8. Rise the &quot;question_number&quot; by one each time if &quot;next_question&quot; is used</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">question_number</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1"># 7. Use the &quot;input&quot; function to show the user the question text and as for the user&#39;s answer.</span>
+        <span class="n">user_answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Q.</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">question_number</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">current_question</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2"> (True/False): &quot;</span><span class="p">)</span>
+        <span class="c1"># 13. Inside &quot;next_question&quot; use &quot;check_answer&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">check_answer</span><span class="p">(</span><span class="n">user_answer</span><span class="p">,</span> <span class="n">current_question</span><span class="o">.</span><span class="n">answer</span><span class="p">)</span>
+
+    <span class="c1"># 9. Create a new method inside the &quot;quiz_brain&quot; file called &quot;still_has_questions&quot;.</span>
+    <span class="k">def</span> <span class="nf">still_has_questions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 10. Return a boolean depending on the value of &quot;question_number&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">question_number</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">question_list</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="c1"># 12. Create a new method called &quot;check_answer&quot; inside the &quot;quiz_brain&quot; file</span>
+    <span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_answer</span><span class="p">,</span> <span class="n">correct_answer</span><span class="p">):</span>
+        <span class="c1"># 12 It will check and display whether answer is correct or not</span>
+        <span class="k">if</span> <span class="n">user_answer</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">correct_answer</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+            <span class="c1"># 14. Keep track of the user&#39;s score, add for this a new attribute &quot;score&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You got it right!&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That&#39;s wrong!&quot;</span><span class="p">)</span>
+        <span class="c1"># 15. Tell the user after each question the correct answer and the current score</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The correct answer was: </span><span class="si">{</span><span class="n">correct_answer</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Your current score is: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">score</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">question_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div></p>
+<p><em>Additional:</em></p>
+<p>It is a little boring when we have only one database in our quiz. You could now write your own questions and then add them to the directory. However, an alternative is to use a database. I chose to use the "OPEN TRIVIA DATABASE" which provides free "trivia questions". This database has over 3000 verified questions to choose from.</p>
+<p>Go go the website of <a href="https://opentdb.com/">open trivia database</a> and take a look to the API (Application Programming Interface). An API makes it possible to exchange data between software and program parts.  </p>
+<p>Settings which I selected:
+![[py42.png]]</p>
+<p>After a click on "GENERATE API URL" you will get at the top of the screen a URL! If you open this URL you will see generated data in the JSON-format (JavaScript Object Notation):
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code> {&quot;response_code&quot;:0,&quot;results&quot;:[{&quot;category&quot;:&quot;History&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;easy&quot;,&quot;question&quot;:&quot;The Cold War ended with Joseph Stalin&amp;#039;s death.&quot;,&quot;correct_answer&quot;:&quot;False&quot;,&quot;incorrect_answers&quot;:[&quot;True&quot;]},{&quot;category&quot;:&quot;Art&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;medium&quot;,&quot;question&quot;:&quot;Pablo Picasso is one of the founding fathers of &amp;quot;Cubism.&amp;quot;&quot;,&quot;correct_answer&quot;:&quot;True&quot;,&quot;incorrect_answers&quot;:[&quot;False&quot;]},{&quot;category&quot;:&quot;Politics&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;easy&quot;,&quot;question&quot;:&quot;Denmark has a monarch.&quot;,&quot;correct_answer&quot;:&quot;True&quot;,&quot;incorrect_answers&quot;:[&quot;False&quot;]},{&quot;category&quot;:&quot;History&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;easy&quot;,&quot;question&quot;:&quot;Former United States Presidents John Adams and Thomas Jefferson died within hours of each other.&quot;,&quot;correct_answer&quot;:&quot;True&quot;,&quot;incorrect_answers&quot;:[&quot;False&quot;]},{&quot;category&quot;:&quot;Science: Computers&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;easy&quot;,&quot;question&quot;:&quot;&amp;quot;HTML&amp;quot; stands for Hypertext Markup Language.&quot;,&quot;correct_answer&quot;:&quot;True&quot;,&quot;incorrect_answers&quot;:[&quot;False&quot;]},{&quot;category&quot;:&quot;General Knowledge&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;medium&quot;,&quot;question&quot;:&quot;The French word for &amp;quot;glass&amp;quot; is &amp;quot;glace&amp;quot;.&quot;,&quot;correct_answer&quot;:&quot;False&quot;,&quot;incorrect_answers&quot;:[&quot;True&quot;]},{&quot;category&quot;:&quot;Entertainment: Music&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;hard&quot;,&quot;question&quot;:&quot;The song &amp;quot;Mystery Train&amp;quot; was released by artist &amp;quot;Little Junior&amp;#039;s Blue Flames&amp;quot; in 1953.&quot;,&quot;correct_answer&quot;:&quot;True&quot;,&quot;incorrect_answers&quot;:[&quot;False&quot;]},{&quot;category&quot;:&quot;History&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;medium&quot;,&quot;question&quot;:&quot;Martin Luther King Jr. and Anne Frank were born the same year. &quot;,&quot;correct_answer&quot;:&quot;True&quot;,&quot;incorrect_answers&quot;:[&quot;False&quot;]},{&quot;category&quot;:&quot;Entertainment: Japanese Anime &amp; Manga&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;hard&quot;,&quot;question&quot;:&quot;In the &amp;quot;To Love-Ru&amp;quot; series, Peke is considered a female robot.&quot;,&quot;correct_answer&quot;:&quot;True&quot;,&quot;incorrect_answers&quot;:[&quot;False&quot;]},{&quot;category&quot;:&quot;Art&quot;,&quot;type&quot;:&quot;boolean&quot;,&quot;difficulty&quot;:&quot;medium&quot;,&quot;question&quot;:&quot;Venus of Willendorf is one of the earliest works of art, depicting the planets Mars and Venus embrace in the heavens at night.&quot;,&quot;correct_answer&quot;:&quot;False&quot;,&quot;incorrect_answers&quot;:[&quot;True&quot;]}]}        
+</code></pre></div></td></tr></table></div></p>
+<p>Lets copy the data inside our <code>data.py</code> file and override the last data. After your paste the data, it is really hard to read, so go to <code>Code</code> and press <code>Reformat code</code> inside Pycharm IDE. Now it looks like this:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code> question_data = {&quot;response_code&quot;: 0, &quot;results&quot;: [{&quot;category&quot;: &quot;History&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;easy&quot;,
+                                                  &quot;question&quot;: &quot;The Cold War ended with Joseph Stalin&amp;#039;s death.&quot;,
+                                                  &quot;correct_answer&quot;: &quot;False&quot;, &quot;incorrect_answers&quot;: [&quot;True&quot;]},
+                                                 {&quot;category&quot;: &quot;Art&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;medium&quot;,
+                                                  &quot;question&quot;: &quot;Pablo Picasso is one of the founding fathers of &amp;quot;Cubism.&amp;quot;&quot;,
+                                                  &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                                                 {&quot;category&quot;: &quot;Politics&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;easy&quot;,
+                                                  &quot;question&quot;: &quot;Denmark has a monarch.&quot;, &quot;correct_answer&quot;: &quot;True&quot;,
+                                                  &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                                                 {&quot;category&quot;: &quot;History&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;easy&quot;,
+                                                  &quot;question&quot;: &quot;Former United States Presidents John Adams and Thomas Jefferson died within hours of each other.&quot;,
+                                                  &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                                                 {&quot;category&quot;: &quot;Science: Computers&quot;, &quot;type&quot;: &quot;boolean&quot;,
+                                                  &quot;difficulty&quot;: &quot;easy&quot;,
+                                                  &quot;question&quot;: &quot;&amp;quot;HTML&amp;quot; stands for Hypertext Markup Language.&quot;,
+                                                  &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                                                 {&quot;category&quot;: &quot;General Knowledge&quot;, &quot;type&quot;: &quot;boolean&quot;,
+                                                  &quot;difficulty&quot;: &quot;medium&quot;,
+                                                  &quot;question&quot;: &quot;The French word for &amp;quot;glass&amp;quot; is &amp;quot;glace&amp;quot;.&quot;,
+                                                  &quot;correct_answer&quot;: &quot;False&quot;, &quot;incorrect_answers&quot;: [&quot;True&quot;]},
+                                                 {&quot;category&quot;: &quot;Entertainment: Music&quot;, &quot;type&quot;: &quot;boolean&quot;,
+                                                  &quot;difficulty&quot;: &quot;hard&quot;,
+                                                  &quot;question&quot;: &quot;The song &amp;quot;Mystery Train&amp;quot; was released by artist &amp;quot;Little Junior&amp;#039;s Blue Flames&amp;quot; in 1953.&quot;,
+                                                  &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                                                 {&quot;category&quot;: &quot;History&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;medium&quot;,
+                                                  &quot;question&quot;: &quot;Martin Luther King Jr. and Anne Frank were born the same year. &quot;,
+                                                  &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                                                 {&quot;category&quot;: &quot;Entertainment: Japanese Anime &amp; Manga&quot;,
+                                                  &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;hard&quot;,
+                                                  &quot;question&quot;: &quot;In the &amp;quot;To Love-Ru&amp;quot; series, Peke is considered a female robot.&quot;,
+                                                  &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                                                 {&quot;category&quot;: &quot;Art&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;medium&quot;,
+                                                  &quot;question&quot;: &quot;Venus of Willendorf is one of the earliest works of art, depicting the planets Mars and Venus embrace in the heavens at night.&quot;,
+                                                  &quot;correct_answer&quot;: &quot;False&quot;, &quot;incorrect_answers&quot;: [&quot;True&quot;]}]}
+</code></pre></div></td></tr></table></div></p>
+<p>This dictionary has two key value pairs (response_code and results). I fou <code>Reformat Code</code> again, you will see that <code>results</code> have 10 dictionarys:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code>question_data = {&quot;response_code&quot;: 0,
+                 &quot;results&quot;: [{&quot;category&quot;: &quot;History&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;easy&quot;,
+                              &quot;question&quot;: &quot;The Cold War ended with Joseph Stalin&amp;#039;s death.&quot;,
+                              &quot;correct_answer&quot;: &quot;False&quot;, &quot;incorrect_answers&quot;: [&quot;True&quot;]},
+                             {&quot;category&quot;: &quot;Art&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;medium&quot;,
+                              &quot;question&quot;: &quot;Pablo Picasso is one of the founding fathers of &amp;quot;Cubism.&amp;quot;&quot;,
+                              &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                             {&quot;category&quot;: &quot;Politics&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;easy&quot;,
+                              &quot;question&quot;: &quot;Denmark has a monarch.&quot;, &quot;correct_answer&quot;: &quot;True&quot;,
+                              &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                             {&quot;category&quot;: &quot;History&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;easy&quot;,
+                              &quot;question&quot;: &quot;Former United States Presidents John Adams and Thomas Jefferson died within hours of each other.&quot;,
+                              &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                             {&quot;category&quot;: &quot;Science: Computers&quot;, &quot;type&quot;: &quot;boolean&quot;,
+                              &quot;difficulty&quot;: &quot;easy&quot;,
+                              &quot;question&quot;: &quot;&amp;quot;HTML&amp;quot; stands for Hypertext Markup Language.&quot;,
+                              &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                             {&quot;category&quot;: &quot;General Knowledge&quot;, &quot;type&quot;: &quot;boolean&quot;,
+                              &quot;difficulty&quot;: &quot;medium&quot;,
+                              &quot;question&quot;: &quot;The French word for &amp;quot;glass&amp;quot; is &amp;quot;glace&amp;quot;.&quot;,
+                              &quot;correct_answer&quot;: &quot;False&quot;, &quot;incorrect_answers&quot;: [&quot;True&quot;]},
+                             {&quot;category&quot;: &quot;Entertainment: Music&quot;, &quot;type&quot;: &quot;boolean&quot;,
+                              &quot;difficulty&quot;: &quot;hard&quot;,
+                              &quot;question&quot;: &quot;The song &amp;quot;Mystery Train&amp;quot; was released by artist &amp;quot;Little Junior&amp;#039;s Blue Flames&amp;quot; in 1953.&quot;,
+                              &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                             {&quot;category&quot;: &quot;History&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;medium&quot;,
+                              &quot;question&quot;: &quot;Martin Luther King Jr. and Anne Frank were born the same year. &quot;,
+                              &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                             {&quot;category&quot;: &quot;Entertainment: Japanese Anime &amp; Manga&quot;,
+                              &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;hard&quot;,
+                              &quot;question&quot;: &quot;In the &amp;quot;To Love-Ru&amp;quot; series, Peke is considered a female robot.&quot;,
+                              &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+                             {&quot;category&quot;: &quot;Art&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;medium&quot;,
+                              &quot;question&quot;: &quot;Venus of Willendorf is one of the earliest works of art, depicting the planets Mars and Venus embrace in the heavens at night.&quot;,
+                              &quot;correct_answer&quot;: &quot;False&quot;, &quot;incorrect_answers&quot;: [&quot;True&quot;]}]}
+</code></pre></div></td></tr></table></div></p>
+<p>How you have to modify the quiz game, to get it work with this database?<br />
+Firstly modify the <code>question_data</code>, just delete the <code>results</code> and <code>response_code</code>, then we have a list of dictionarys.<br />
+The data have to lool like this:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span></pre></div></td><td class="code"><div><pre><span></span><code>question_data = [
+    {&quot;category&quot;: &quot;History&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;easy&quot;,
+     &quot;question&quot;: &quot;The Cold War ended with Joseph Stalin&amp;#039;s death.&quot;,
+     &quot;correct_answer&quot;: &quot;False&quot;, &quot;incorrect_answers&quot;: [&quot;True&quot;]},
+    {&quot;category&quot;: &quot;Art&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;medium&quot;,
+     &quot;question&quot;: &quot;Pablo Picasso is one of the founding fathers of &amp;quot;Cubism.&amp;quot;&quot;,
+     &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+    {&quot;category&quot;: &quot;Politics&quot;,
+     &quot;type&quot;: &quot;boolean&quot;,
+     &quot;difficulty&quot;: &quot;easy&quot;,
+     &quot;question&quot;: &quot;Denmark has a monarch.&quot;,
+     &quot;correct_answer&quot;: &quot;True&quot;,
+     &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+    {&quot;category&quot;: &quot;History&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;easy&quot;,
+     &quot;question&quot;: &quot;Former United States Presidents John Adams and Thomas Jefferson died within hours of each other.&quot;,
+     &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+    {&quot;category&quot;: &quot;Science: Computers&quot;, &quot;type&quot;: &quot;boolean&quot;,
+     &quot;difficulty&quot;: &quot;easy&quot;,
+     &quot;question&quot;: &quot;&amp;quot;HTML&amp;quot; stands for Hypertext Markup Language.&quot;,
+     &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+    {&quot;category&quot;: &quot;General Knowledge&quot;, &quot;type&quot;: &quot;boolean&quot;,
+     &quot;difficulty&quot;: &quot;medium&quot;,
+     &quot;question&quot;: &quot;The French word for &amp;quot;glass&amp;quot; is &amp;quot;glace&amp;quot;.&quot;,
+     &quot;correct_answer&quot;: &quot;False&quot;, &quot;incorrect_answers&quot;: [&quot;True&quot;]},
+    {&quot;category&quot;: &quot;Entertainment: Music&quot;, &quot;type&quot;: &quot;boolean&quot;,
+     &quot;difficulty&quot;: &quot;hard&quot;,
+     &quot;question&quot;: &quot;The song &amp;quot;Mystery Train&amp;quot; was released by artist &amp;quot;Little Junior&amp;#039;s Blue Flames&amp;quot; in 1953.&quot;,
+     &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+    {&quot;category&quot;: &quot;History&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;medium&quot;,
+     &quot;question&quot;: &quot;Martin Luther King Jr. and Anne Frank were born the same year. &quot;,
+     &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+    {&quot;category&quot;: &quot;Entertainment: Japanese Anime &amp; Manga&quot;,
+     &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;hard&quot;,
+     &quot;question&quot;: &quot;In the &amp;quot;To Love-Ru&amp;quot; series, Peke is considered a female robot.&quot;,
+     &quot;correct_answer&quot;: &quot;True&quot;, &quot;incorrect_answers&quot;: [&quot;False&quot;]},
+    {&quot;category&quot;: &quot;Art&quot;, &quot;type&quot;: &quot;boolean&quot;, &quot;difficulty&quot;: &quot;medium&quot;,
+     &quot;question&quot;: &quot;Venus of Willendorf is one of the earliest works of art, depicting the planets Mars and Venus embrace in the heavens at night.&quot;,
+     &quot;correct_answer&quot;: &quot;False&quot;, &quot;incorrect_answers&quot;: [&quot;True&quot;]}
+]
+</code></pre></div></td></tr></table></div></p>
+<p>The last step ist just to change in <code>main.py</code> file the keys inside <code>question_text</code> to "question" and inside <code>question_answer</code> to "correct_answer".</p>
+<h2 id="2-assignment">2. Assignment<a class="headerlink" href="#2-assignment" title="Permanent link">&para;</a></h2>
+<p>Rectangle class:  </p>
+<ol>
+<li>Write a Rectangle class in Python language, allowing you to build a rectangle with length and width attributes.</li>
+<li>Create a Perimeter() method to calculate the perimeter of the rectangle and a Area() method to calculate the area of ​​the rectangle.</li>
+<li>Create a method display() that display the length, width, perimeter and area of an object created using an instantiation on rectangle class.</li>
+<li>Create a Parallelepipede child class inheriting from the Rectangle class and with a height attribute and another Volume() method to calculate the volume of the Parallelepiped.</li>
+</ol>
+<p>Solution:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 1. Create the class</span>
+<span class="k">class</span> <span class="nc">Rectangle</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span>
+
+    <span class="c1"># 2. Create perimeter method</span>
+    <span class="k">def</span> <span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">perimeter</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span>
+        <span class="k">return</span> <span class="n">perimeter</span>
+
+    <span class="c1"># 2. Create an area method</span>
+    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">area</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span>
+        <span class="k">return</span> <span class="n">area</span>
+
+    <span class="c1"># 3. Create the method display</span>
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;The length is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">length</span><span class="si">}</span><span class="s2"> units, the width is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="si">}</span><span class="s2"> units, the perimeter is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">perimeter</span><span class="p">()</span><span class="si">}</span><span class="s2"> units and the area is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">area</span><span class="p">()</span><span class="si">}</span><span class="s2"> square units&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># 4. Create a Parallelepiped child class</span>
+<span class="k">class</span> <span class="nc">Parallelepiped</span><span class="p">(</span><span class="n">Rectangle</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">volume</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">volume</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">area</span><span class="p">()</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span>
+        <span class="k">return</span> <span class="n">volume</span>
+
+
+<span class="c1"># --------------------------------------------------------- #</span>
+<span class="c1"># Main program</span>
+<span class="c1"># --------------------------------------------------------- #</span>
+<span class="c1"># Create the object</span>
+<span class="n">rectangle</span> <span class="o">=</span> <span class="n">Rectangle</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">rectangle</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+<span class="c1"># Create the object</span>
+<span class="n">my_parellepiped</span> <span class="o">=</span> <span class="n">Parallelepiped</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c1"># Show the volume</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The volume of the parellepiped is: </span><span class="si">{</span><span class="n">my_parellepiped</span><span class="o">.</span><span class="n">volume</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div></p>
+<h2 id="3-assignment">3. Assignment<a class="headerlink" href="#3-assignment" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Create a Python class Person with attributes: name and age of type string.</li>
+<li>Create a display() method that displays the name and age of an object created via the Person class.</li>
+<li>Create a child class Student which inherits from the Person class and which also has a section attribute.</li>
+<li>Create a method displayStudent() that displays the name, age and section of an object created via the Student class.</li>
+<li>Create a student object via an instantiation on the Student class and then test the displayStudent method.</li>
+</ol>
+<p>Solution:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Super class</span>
+<span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The name is: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> and the age is: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Subclass</span>
+<span class="k">class</span> <span class="nc">Student</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">section</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">section</span> <span class="o">=</span> <span class="n">section</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The name is: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> and the age is: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">Students section is: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">section</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># -------------------------------- #</span>
+<span class="c1"># Main program</span>
+<span class="c1"># -------------------------------- #</span>
+<span class="n">person</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Alex&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<span class="n">person</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+
+<span class="n">student</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s2">&quot;peter&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;engineering&quot;</span><span class="p">)</span>
+<span class="n">student</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div></p>
+<h2 id="4-assignment">4. Assignment<a class="headerlink" href="#4-assignment" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Create a Python class called BankAccount which represents a bank account, having as attributes: accountNumber (numeric type), name (name of the account owner as string type), balance.</li>
+<li>Create a constructor with parameters: accountNumber, name, balance.</li>
+<li>Create a Deposit() method which manages the deposit actions.</li>
+<li>Create a Withdrawal() method which manages withdrawals actions.</li>
+<li>Create an bankFees() method to apply the bank fees with a percentage of 5% of the balance account.</li>
+<li>Create a display() method to display account details. Give the complete code for the BankAccount class.</li>
+</ol>
+<p>Solution:</p>
+<p>The <code>main.py</code> file:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">BankAccount</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">accountNumber</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">balance</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">accountNumber</span> <span class="o">=</span> <span class="n">accountNumber</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="n">balance</span>
+
+    <span class="k">def</span> <span class="nf">deposit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deposit</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">+=</span> <span class="n">deposit</span>
+
+    <span class="k">def</span> <span class="nf">withdrawal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">withdrawal</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">&gt;</span> <span class="n">withdrawal</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">-=</span> <span class="n">withdrawal</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Balance is to small!&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">bankFees</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="mi">95</span> <span class="o">/</span> <span class="mi">100</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span>
+
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Name: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">, Account Number: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">accountNumber</span><span class="si">}</span><span class="s2">, Balance: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># ---------------------</span>
+<span class="c1"># Main program</span>
+<span class="c1"># ---------------------</span>
+
+<span class="n">first_account</span> <span class="o">=</span> <span class="n">BankAccount</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Alex&quot;</span><span class="p">,</span> <span class="mi">4000</span><span class="p">)</span>
+<span class="n">first_account</span><span class="o">.</span><span class="n">deposit</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="n">first_account</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+<span class="n">first_account</span><span class="o">.</span><span class="n">withdrawal</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
+<span class="n">first_account</span><span class="o">.</span><span class="n">withdrawal</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">first_account</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+<span class="n">first_account</span><span class="o">.</span><span class="n">bankFees</span><span class="p">()</span>
+<span class="n">first_account</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div></p>
+<h2 id="5-assignment">5. Assignment<a class="headerlink" href="#5-assignment" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Define a Circle class allowing to create a circleC (O, r) with center O(a, b) and radius r using the constructor:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">r</span>         
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p>Define a <code>Area()</code> method of the class which calculates the area of the circle.</p>
+</li>
+<li>Define a <code>Perimeter()</code> method of the class which allows you to calculate the perimeter of the circle.</li>
+<li>Define a <code>testBelongs()</code> method of the class which allows to test whether a point A(x, y) belongs to the circle C(O, r) or not.</li>
+</ol>
+<p>Solution:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
+
+
+<span class="k">class</span> <span class="nc">Circle</span><span class="p">:</span>
+    <span class="c1"># a and b are the middle point coordinates!</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">r</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+
+    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">area</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">area</span>
+
+    <span class="k">def</span> <span class="nf">perimeter</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">perimeter</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">pi</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">r</span>
+        <span class="k">return</span> <span class="n">perimeter</span>
+
+    <span class="k">def</span> <span class="nf">circleEquation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="c1"># Just the mathematical function of a circle!</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">**</span> <span class="mi">2</span>
+        <span class="k">return</span> <span class="n">f</span>
+
+    <span class="k">def</span> <span class="nf">testBelongs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">circleEquation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The point (</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">) belongs to the circle!&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The point (</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">) don&#39;t belong to the circle!&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># ---------------------------- #</span>
+<span class="c1"># Main program</span>
+<span class="c1"># ---------------------------- #</span>
+<span class="n">my_circle</span> <span class="o">=</span> <span class="n">Circle</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_circle</span><span class="o">.</span><span class="n">area</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_circle</span><span class="o">.</span><span class="n">perimeter</span><span class="p">())</span>
+<span class="c1"># Is the point with the coordinate (x=1, y=1) on the circle which we created?</span>
+<span class="n">my_circle</span><span class="o">.</span><span class="n">testBelongs</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1"># Is the point with the coordinate (x=5, y=3) on the circle which we created?</span>
+<span class="n">my_circle</span><span class="o">.</span><span class="n">testBelongs</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Qualidy GmbH
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.kununu.com/de/qualidy" target="_blank" rel="noopener" title="www.kununu.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M311 86.3c12.3-12.7 12-32.9-.7-45.2s-32.9-12-45.2.7l-155.2 160L64 249V64c0-17.7-14.3-32-32-32S0 46.3 0 64v384c0 17.7 14.3 32 32 32s32-14.3 32-32V341l64.7-66.7 133 192c10.1 14.5 30 18.1 44.5 8.1s18.1-30 8.1-44.5L174.1 227.4z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://de.linkedin.com/company/qualidy" target="_blank" rel="noopener" title="de.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.google.com/search?sca_esv=7e6ba2047fcb60f3&uds=AMwkrPtyB8MsmozA4Lwzqy2G2HCu-abqzc6moOG48q3gP5dtjTRzC2Ws0eSwcyLXDfZNuYCrZ7ByIreHLG9th3vKLekPoVeey0tumAbet4cVLQRLzdRFhUbOGbnyp3xo1V0hzzaNmkCN&si=AKbGX_rcuucMgom2rba1cdwsvM2SVoIkP2btyqGMV4t0GuHIs4sGV_1tpuqR0YHG4Rzd9SdJcL-lW6E-2aJA5azZLTKkIOrZ2j2aWwoBkVbdEJ0o0GPcQhs%3D&q=Qualidy+GmbH+Rezensionen&sa=X&ved=2ahUKEwibsbnSgcmFAxXNQvEDHaVYCiAQ3PALegQIRxAF" target="_blank" rel="noopener" title="www.google.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27 3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10 5.35 0 9.25-3.67 9.25-9.09 0-1.15-.15-1.81-.15-1.81"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://qualidy.de" target="_blank" rel="noopener" title="qualidy.de" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.4c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.3c2.2 20.4 3.3 41.8 3.3 64m28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64m112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 20.9 58.2 27 94.7m-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6M8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64m186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.7z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="../../../javascripts/pytutor_button.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      
+        <script src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+      
+    
+  </body>
+</html>
