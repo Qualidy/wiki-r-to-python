@@ -19,14 +19,14 @@ Bevor man mit der Pandas-Bibliothek arbeiten kann, muss man sie importieren. Da 
 Erste Schritte:
 ```python
 import pandas
-# Lets read a csv
-data = pandas.read_csv("https://github.com/laxmimerit/All-CSV-ML-Data-Files-Download/blob/master/bigmac.csv")
-# Display the data inside the csv
+
+url = "https://raw.githubusercontent.com/laxmimerit/All-CSV-ML-Data-Files-Download/master/bigmac.csv"
+data = pd.read_csv(url, sep=",", encoding="utf-8")
+
 print(data)
-# Just get the column called Country
+
 countries = data["Country"]
 print("# ------------------------------------ #")
-# Display only temperatures
 print(countries)
 ```
 
